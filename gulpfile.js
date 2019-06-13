@@ -26,5 +26,12 @@ gulp.task('minify-js', function () {
         .pipe(gulp.dest('./js'));
 });
 
+gulp.task('minify-waypoints-js', function () {
+    return gulp.src('./node_modules/waypoints/lib/jquery.waypoints.js')
+        .pipe(uglify())
+        .pipe(rename({basename: 'jquery.waypoints.min'}))
+        .pipe(gulp.dest('./node_modules/waypoints/lib/'));
+});
+
 // default task
-gulp.task('default', ['sass', 'minify-js']);
+gulp.task('default', ['sass', 'minify-js', 'minify-waypoints-js']);
