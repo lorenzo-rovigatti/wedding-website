@@ -283,6 +283,9 @@ Hero
   .hero-content img {
     width: 55%;
     margin-bottom: 12%;
+    background-color: rgba(255,255,255,0.25);
+    padding:20px;
+    border-radius: 80px;
   }
 }
 .navigation {
@@ -316,9 +319,12 @@ header {
   }
   .logo {
     display: inline-block;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    padding: 5px;
   }
   .logo img {
-    height: 19px;
+    height: 25px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
