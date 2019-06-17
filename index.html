@@ -137,7 +137,7 @@
                     <p>Il rito civile avrà luogo nella sala Consiliare del Comune di Frascati, Piazza Guglielmo Marconi, 3, 00044 Frascati (RM).</p>
                 </div>
                 
-                <div id="map-canvas-rito"></div>
+                <div id="map-canvas-rito" class="map-canvas"></div>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <div class="wp4">
@@ -147,7 +147,7 @@
                     <p>Il ricevimento si terrà alla <a href="http://www.casinadellorologio.it/">Casina dell'Orologio</a>, in via della Molara, 22, 00040 Rocca di Papa (RM).</p>
                 </div>
                 
-                <div id="map-canvas-ricevimento"></div>
+                <div id="map-canvas-ricevimento" class="map-canvas"></div>
             </div>
         </div>
         <div class="row section-padding">
@@ -290,37 +290,41 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="La tua e-mail"
-                                                                     required>
+                                <label for="name">Nome</label>
+                                <input name="name" class="" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Il tuo nome"
-                                                                 required>
+                                <label for="pax">N. persone</label>
+                                <input type="number" name="pax" class="" min="1" max="5" value="1" required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="pax" class="" min="1"
-                                                                  max="5" value="1"
-                                                                  placeholder="Quante persone?"
-                                                                  required>
+                                <label for="bambini">N. bambini</label>
+                                <input type="number" name="bambini" class="" min="0" max="5" value="" required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input name="invite_code" id="invite_code"
-                                                                class=""
-                                                                placeholder="Codice invito"
-                                                                required>
+                                <label for="invite_code">Codice invito</label>
+                                <input name="invite_code" id="invite_code" class="" required>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="form-input-group">
+                                <label for="intolleranze">Menu speciali e/o intolleranze</label>
+                                <textarea name="intolleranze" id="intolleranze" class=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
@@ -338,7 +342,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Lista nozze</h3>
-                <p>Stiamo organizzando un viaggio dall'altra parte del mondo. Se vuoi contribuire ecco le coordinate!</p>
+                <p>Stiamo organizzando un viaggio dall'altra parte del mondo. Se volessi contribuire qui sotto puoi trovare le nostre coordinate!</p>
                 
                 <p>
                     Intestataria: <b>Laura Polito</b>
