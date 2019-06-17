@@ -244,7 +244,7 @@ function initMap() {
     });
 
     var marker_ricevimento = new google.maps.Marker({
-        position: coords,
+        position: coords_rito,
         map: map_ricevimento
     });
     
@@ -256,7 +256,7 @@ function initMap() {
     });
 
     var marker_ricevimento = new google.maps.Marker({
-        position: coords,
+        position: coords_ricevimento,
         map: map_ricevimento
     });
 }
