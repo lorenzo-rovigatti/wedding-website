@@ -236,16 +236,28 @@ $(document).ready(function () {
 
 // Google map
 function initMap() {
-    var itc_kol = {lat: 41.781576, lng: 12.721918};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    var coords_rito = {lat: 41.806415, lng: 12.680020};
+    var map_rito= new google.maps.Map(document.getElementById('map-canvas-rito'), {
         zoom: 15,
-        center: itc_kol,
+        center: coords_rito,
         scrollwheel: false
     });
 
-    var marker = new google.maps.Marker({
-        position: itc_kol,
-        map: map
+    var marker_ricevimento = new google.maps.Marker({
+        position: coords,
+        map: map_ricevimento
+    });
+    
+    var coords_ricevimento = {lat: 41.781576, lng: 12.721918};
+    var map_ricevimento = new google.maps.Map(document.getElementById('map-canvas-ricevimento'), {
+        zoom: 15,
+        center: coords_ricevimento,
+        scrollwheel: false
+    });
+
+    var marker_ricevimento = new google.maps.Marker({
+        position: coords,
+        map: map_ricevimento
     });
 }
 
