@@ -245,9 +245,9 @@ function initMap() {
         scrollwheel: false
     });
 
-    var marker_ricevimento = new google.maps.Marker({
+    var marker_rito = new google.maps.Marker({
         position: coords_rito,
-        map: map_ricevimento
+        map: map_rito
     });
     
     var coords_ricevimento = {lat: 41.781576, lng: 12.721918};
